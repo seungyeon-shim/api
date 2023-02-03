@@ -1,0 +1,54 @@
+.detail-section {
+  /*drop down motion------------------------------*/
+  max-height: 0px;
+  overflow: hidden;
+  transition: max-height 0.5s;
+  /*---------------------------------------------*/
+}
+.detail-section.active {
+  max-height: 100%;
+}
+.detail-section .inner {
+  margin: 0 auto;
+  color: #fff;
+  width: 95%;
+  padding: 10px;
+  padding-top: 40px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.detail-section .inner ul li {
+  padding: 5px;
+  border-bottom: 1px dotted #FFF;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.detail-section .inner ul li h3 {
+  margin-right: 10px;
+  padding: 5px 10px;
+  border-radius: 30px;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.detail-section .inner ul li p b {
+  font-size: 1.2em;
+  font-weight: 600;
+  margin-right: 3px;
+}
+.detail-section .inner ul li p sup {
+  font-size: 0.8em;
+}
+.detail-section .inner ul li q {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 5px;
+  font-size: 0.8em;
+  text-align: center;
+  margin-top: 5px;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+.detail-section .inner ul li q::before, .detail-section .inner ul li q::after {
+  display: none;
+}/*# sourceMappingURL=detail.css.map */

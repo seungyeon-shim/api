@@ -1,0 +1,69 @@
+@import "mixin";
+.hourly-section {
+ // border: 1px solid red;
+  margin-top: 50px;
+  .inner {
+    width: 95%;
+    overflow: hidden;
+    overflow-x:scroll;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding: 10px;
+    background-color: rgba(#000, 0.2);
+    border-radius: 10px;
+    color: #fff;
+    div.hour-container {
+      position: relative;
+      display: inline-flex; /*영역 이상의 값으로 늘어남..자식넓이에 따라서 넓이 값을 가져야됨*/
+      .chart{
+        position: absolute;
+        bottom: 0;
+        left: 35px; //한칸(70px)의 반절
+        width: calc(100% - 70px);
+        height: 300px;
+       // background-color: aqua;
+       .grid{
+        position: absolute;
+        top: -15px; left: -35px;
+        height: 330px;
+        width: 0;
+        span{
+          display: flex;
+          align-items: center;
+          height: 9.0909%;
+          font-size: 0.5em;
+        }
+       }//grid
+      }//chart
+      ul {
+        display: inline-flex; /*영역 이상의 값으로 늘어남*/
+        li {
+          width: 70px;
+          box-sizing: border-box;
+          height: 450px;
+         // border: 1px solid red;
+          > div {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 150px;
+           // border-bottom: 1px solid red;
+            b {
+              display: block;
+              margin: 3px 0;
+              font-size: 0.8em;
+              i {
+                margin-right: 3px;
+              } //i
+            } //b
+            img {
+              width: 50px;
+              border-radius: 50%;
+            }
+          } //>div
+        } //li
+      } //ul
+    } //hour-container
+  } //inner
+} //hourly-section
